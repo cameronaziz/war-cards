@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.opponentSide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 60px;
+  justify-content: space-evenly;
+}

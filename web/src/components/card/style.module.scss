@@ -1,0 +1,19 @@
+@use '~bulma/bulma.sass';
+
+.container {
+  @extend .card;
+  @extend .m-2;
+  @extend .px-1;
+  @extend .pt-1;
+  @extend .pb-0;
+  @extend .box;
+  @extend .has-background-success;
+  width: fit-content;
+  height: fit-content;
+}
+
+.containerAbsolute {
+  @extend .container;
+  position: absolute;
+  width: max-content;
+}

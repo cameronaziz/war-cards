@@ -1,0 +1,6 @@
+@use '~bulma/bulma.sass';
+
+.background {
+  @extend .modal-background;
+  background-color: #333;
+}

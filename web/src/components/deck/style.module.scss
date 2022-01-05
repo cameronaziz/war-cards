@@ -1,0 +1,45 @@
+.deckContainer {
+  display: flex;
+  height: 100vh;
+  flex: 1;
+  justify-content: center;
+  width: 100vw;
+}
+
+.deckContainerDealt {
+  @extend .deckContainer;
+  padding: 16px;
+}
+
+.deckInner {
+  @extend .deckContainer;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.deckStack {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+  flex: 2; 
+  max-width: fit-content;
+}
+
+.itemContainer {
+  transition: left 1s, top 1s, width 1s, height 1s, transform 1s;
+  width: fit-content;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.dummy {
+  flex: 0;
+  transition: flex 1s;
+}
+
+.dummyDealt {
+  flex: 1;
+  transition: flex 1s;
+}
